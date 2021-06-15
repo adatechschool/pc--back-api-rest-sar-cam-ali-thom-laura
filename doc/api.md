@@ -9,8 +9,8 @@
 - /api/products/new
 	- Ajoute dans la db un nouveau produit
 	- Accepts: PUT
-- /api/products/<id: UUID>
-	- Renvoie, modifie,supprime un produit avec un UUID specifique
+- /api/products/<id: INT>
+	- Renvoie, modifie,supprime un produit avec un INT specifique
 	- Accepts: GET, DELETE, PATCH
 - /api/products/categories/<category: STRING>
 	- Renvoie les produits qui sont dans une categorie specifique
@@ -28,10 +28,10 @@
 - /api/users/connect
 	- Verification des donnees entrees
 	- Accepts: POST
-- /api/users/<id: UUID>
-	- Renvoie, Modifie, Supprime un utilisateur par UUID
+- /api/users/<id: INT>
+	- Renvoie, Modifie, Supprime un utilisateur par INT
 	- Accepts: GET, DELETE, PATCH
-- /api/users/<id: UUID>/password
+- /api/users/<id: INT>/password
 	- Modifie le mot de passe de l'utilisateur
 	- Accepts: PATCH
 - 
