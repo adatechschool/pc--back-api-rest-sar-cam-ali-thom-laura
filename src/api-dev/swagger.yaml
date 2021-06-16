@@ -52,6 +52,30 @@ paths:
                   example: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         404:
           description: Supplied ID does not exist.
+    delete:
+      summary: Delete a specific user, by its ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+          minimum: 1
+          description: User ID.
+      responses:
+        200:
+          description: Deletion succesful.
+    patch:
+      summary: Modify a specific user, by its ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+          minimum: 1
+          description: User ID.
+      responses:
+        200:
+          description: Modification succesful.
   /products/all:
     get:
       summary: Returns a list of all product product.
@@ -111,3 +135,27 @@ paths:
                   example: validation_pending
         404:
           description: Supplied ID does not exist.
+    delete:
+      summary: Delete a specific product, by its ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+          minimum: 1
+          description: Product ID.
+      responses:
+        200:
+          description: Deletion succesful.
+    patch:
+      summary: Modify a specific product, by its ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+          minimum: 1
+          description: Product ID.
+      responses:
+        200:
+          description: Modification succesful.
