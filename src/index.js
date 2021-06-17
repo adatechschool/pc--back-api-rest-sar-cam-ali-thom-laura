@@ -1,15 +1,13 @@
 const express = require("express");
 const app = express();
 var db = require("./database.js");
+
 const port = 3000;
 
 app.listen(port, () => {
   console.log("Serveur à l'écoute");
 });
 
-// app.get("/", (req, res, next) => {
-//   res.json({ message: "Ok" });
-// });
 app.get("/api/produits", (req, res, next) => {
   var sql = "select * from produits";
   var params = [];
