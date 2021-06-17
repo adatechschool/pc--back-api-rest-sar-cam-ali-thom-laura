@@ -10,8 +10,8 @@ app.listen(port, () => {
 // app.get("/", (req, res, next) => {
 //   res.json({ message: "Ok" });
 // });
-app.get("/api/users", (req, res, next) => {
-  var sql = "select * from user";
+app.get("/api/produits", (req, res, next) => {
+  var sql = "select * from produits";
   var params = [];
   db.all(sql, params, (err, rows) => {
     if (err) {
