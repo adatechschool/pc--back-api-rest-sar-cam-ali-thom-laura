@@ -1,0 +1,9 @@
+CREATE DATABASE meubles;
+
+CREATE TABLE products (id INTEGER PRIMARY KEY AUTO_INCREMENT, title TEXT, price INTEGER, dim_l INTEGER, dim_w INTEGER, dim_h INTEGER, pic TEXT, category TEXT, color TEXT, material TEXT, status TEXT);
+
+CREATE TABLE users (id INTEGER PRIMARY KEY AUTO_INCREMENT, name TEXT, display_name TEXT, mail TEXT, hash TEXT);
+
+INSERT INTO users (name, display_name, mail, hash) VALUES ('admin', 'Laureline Fleury', 'admin@ampunv.fr', 'password'), ('Gerard Durand', 'Gege', 'gege.durand@ada.fr', 'passwordgege'), ('Elisa Varenne', 'Elisa V.', 'varennelisa@ada.fr', 'passwordelisa'), ('Andres Frijolito', 'El Frijol', 'andresfrijolito@ada.fr', 'passwordfrifri');
+
+ INSERT INTO products (title, price, dim_l, dim_w, dim_h, pic, category, color, material, status) VALUES ('bibliotheque chic', '150', '80', '140', '180', 'http://www.commodeetconsole.com/2877-thickbox_default/bibliotheque-antiquaire-portes-coulissantes-casiers.jpg', 'bibliotheque', 'bois clair', 'bois', 'validation_pending'), ('bureau ideal teletravail', '250', '150', '60', '90', 'https://live.staticflickr.com/5613/15821856202_bc9bb94f17_b.jpg', 'bureau', 'bois clair', 'bambou', 'validation_pending'), ('canape blanc', '450', '190', '80', '90', 'https://cdn.pixabay.com/photo/2019/01/12/15/09/leather-3928723_1280.png', 'canape', 'blanc', 'cuir', 'validation_pending'), ('fauteuil relax', '200', '60', '60', '80', 'https://upload.wikimedia.org/wikipedia/commons/a/ae/Fredo_-_Fauteuil_relax_rayure.jpg', 'fauteuil', 'multicolore', 'tissu', 'validation_pending'), ('table basse', '100', '50', '35', '40', 'https://cdn.pixabay.com/photo/2014/12/21/23/50/table-576152_1280.png', 'table basse', 'bois clair', 'acajou', 'validation_pending'), ('lit double a baldaquin', '500', '220', '200', '250', 'https://www.photolib.fr/galleries/Nicolas_Boulesteix/CC-BY-NC-SA/1963/08/nb_photos_13_39_16_14mm_f2.8_DSF0698_lzn.jpg', 'lit', 'rose', 'bois', 'validation_pending');

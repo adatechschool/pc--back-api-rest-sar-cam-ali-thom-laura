@@ -1,15 +1,17 @@
+//https://bezkoder.com/node-js-rest-api-express-mysql/
+
 const express = require("express");
 const app = express();
 var db = require("./database.js");
 
-const port = 3000;
+const port = 3306;
 
 app.listen(port, () => {
   console.log("Serveur à l'écoute");
 });
 
-app.get("/api/produits", (req, res, next) => {
-  var sql = "select * from produits";
+app.get("/api/products", (req, res, next) => {
+  var sql = "select * from products";
   var params = [];
   db.all(sql, params, (err, rows) => {
     if (err) {
