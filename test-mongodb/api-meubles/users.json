@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "60cf555fa23a8be26f34a3c6"
+  },
+  "name": "admin",
+  "dispay_name": "Laureline Fleury",
+  "mail": "admin@ampunv.fr",
+  "password": "passwordLaureline"
+},{
+  "_id": {
+    "$oid": "60cf555fa23a8be26f34a3c7"
+  },
+  "name": "Gerard Durand",
+  "dispay_name": "Gege",
+  "mail": "gege.durand@ada.fr",
+  "password": "passwordgege"
+},{
+  "_id": {
+    "$oid": "60cf555fa23a8be26f34a3c8"
+  },
+  "name": "Elisa Varenne",
+  "dispay_name": "Elisa V.",
+  "mail": "varennelisa@ada.fr",
+  "password": "passwordeLisa"
+},{
+  "_id": {
+    "$oid": "60cf555fa23a8be26f34a3c9"
+  },
+  "name": "Amdres Frijolito",
+  "dispay_name": "El Frijol",
+  "mail": "andresfrijolito@ada.fr",
+  "password": "passwordfrifri"
+}]

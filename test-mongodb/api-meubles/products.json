@@ -1,0 +1,85 @@
+[{
+  "_id": {
+    "$oid": "60cf5928a23a8be26f34a3cb"
+  },
+  "title": "bibliotheque chic",
+  "price": 150,
+  "dim_l": 140,
+  "dim_w": 80,
+  "dim_h": 180,
+  "pic": "http://www.commodeetconsole.com/2877-thickbox_default/bibliotheque-antiquaire-portes-coulissantes-casiers.jpg",
+  "category": "bibliotheque",
+  "color": "bois clair",
+  "material": "bouleau",
+  "status": "validation pending"
+},{
+  "_id": {
+    "$oid": "60cf5aada23a8be26f34a3cc"
+  },
+  "title": "bureau ideal teletravail",
+  "price": 250,
+  "dim_l": 150,
+  "dim_w": 60,
+  "dim_h": 90,
+  "pic": "https://live.staticflickr.com/5613/15821856202_bc9bb94f17_b.jpg",
+  "category": "bureau",
+  "color": "bois clair",
+  "material": "bambou",
+  "status": "validation pending"
+},{
+  "_id": {
+    "$oid": "60cf5daaa23a8be26f34a3ce"
+  },
+  "title": "canapé blanc",
+  "price": 450,
+  "dim_l": 190,
+  "dim_w": 80,
+  "dim_h": 90,
+  "pic": "https://cdn.pixabay.com/photo/2019/01/12/15/09/leather-3928723_1280.pnghttps://live.staticflickr.com/5613/15821856202_bc9bb94f17_b.jpg",
+  "category": "canapé",
+  "color": "blanc",
+  "material": "cuir",
+  "status": "validation pending"
+},{
+  "_id": {
+    "$oid": "60cf5dd7a23a8be26f34a3cf"
+  },
+  "title": "fauteuil relax",
+  "price": 200,
+  "dim_l": 60,
+  "dim_w": 60,
+  "dim_h": 80,
+  "pic": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Fredo_-_Fauteuil_relax_rayure.jpg",
+  "category": "fauteuil",
+  "color": "multicolore",
+  "material": "tissu",
+  "status": "validation pending"
+},{
+  "_id": {
+    "$oid": "60cf5e6da23a8be26f34a3d0"
+  },
+  "title": "table basse",
+  "price": 100,
+  "dim_l": 50,
+  "dim_w": 35,
+  "dim_h": 40,
+  "pic": "https://cdn.pixabay.com/photo/2014/12/21/23/50/table-576152_1280.png",
+  "category": "table basse",
+  "color": "bois clair",
+  "material": "acajou",
+  "status": "validation pending"
+},{
+  "_id": {
+    "$oid": "60cf5ed0a23a8be26f34a3d1"
+  },
+  "title": "lit double à baldaquin",
+  "price": 500,
+  "dim_l": 220,
+  "dim_w": 200,
+  "dim_h": 250,
+  "pic": "https://www.photolib.fr/galleries/Nicolas_Boulesteix/CC-BY-NC-SA/1963/08/nb_photos_13_39_16_14mm_f2.8_DSF0698_lzn.jpg",
+  "category": "lit",
+  "color": "rose",
+  "material": "bois",
+  "status": "validation pending"
+}]
