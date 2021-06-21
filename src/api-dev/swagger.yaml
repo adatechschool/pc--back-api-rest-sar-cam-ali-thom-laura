@@ -1,0 +1,161 @@
+swagger: "2.0"
+info:
+  title: AMPUNV API
+  description: API description in Markdown.
+  version: 1.0.0
+host: localhost:3000
+basePath: /api
+schemes:
+  - https
+paths:
+  /users/all:
+    get:
+      summary: Returns a list of all users.
+      description: Returns a list of objects, each representing a different user.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+  /users/{id}:
+    get:
+      summary: Returns a user by ID.
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+          minimum: 1
+          description: User ID.
+      responses:
+        200:
+          description: A list with a single User object.
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                id:
+                  type: integer
+                  example: 1
+                name:
+                  type: string
+                  example: admin
+                display_name:
+                  type: string
+                  example: Laureline Fleury
+                mail:
+                  type: string
+                  example: admin@ampunv.fr
+                hash:
+                  type: string
+                  example: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        404:
+          description: Supplied ID does not exist.
+    delete:
+      summary: Delete a specific user, by its ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+          minimum: 1
+          description: User ID.
+      responses:
+        200:
+          description: Deletion succesful.
+    patch:
+      summary: Modify a specific user, by its ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+          minimum: 1
+          description: User ID.
+      responses:
+        200:
+          description: Modification succesful.
+  /products/all:
+    get:
+      summary: Returns a list of all product product.
+      description: Returns a list of objects, each representing a different product.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+  /products/{id}:
+    get:
+      summary: Returns a product by ID.
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+          minimum: 1
+          description: Product ID.
+      responses:
+        200:
+          description: A list with a single product object.
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                id:
+                  type: integer
+                  example: 1
+                title:
+                  type: string
+                  example: Table en bois d'arbre veritable
+                dim_l:
+                  type: int
+                  example: 150
+                dim_w:
+                  type: int
+                  example: 150
+                dim_h:
+                  type: int
+                  example: 90
+                pic:
+                  type: string
+                  example: https://images-na.ssl-images-amazon.com/images/I/516qbjCXW5L._AC_.jpg
+                category:
+                  type: string
+                  example: table
+                color:
+                  type: string
+                  example: dark_wood
+                material:
+                  type: string
+                  example: wood
+                status:
+                  type: string
+                  example: validation_pending
+        404:
+          description: Supplied ID does not exist.
+    delete:
+      summary: Delete a specific product, by its ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+          minimum: 1
+          description: Product ID.
+      responses:
+        200:
+          description: Deletion succesful.
+    patch:
+      summary: Modify a specific product, by its ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          type: integer
+          minimum: 1
+          description: Product ID.
+      responses:
+        200:
+          description: Modification succesful.
