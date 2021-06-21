@@ -5,7 +5,6 @@
         Les fontionnalites de connexion et d'inscription utilisateur & le reset de pass 
 
 */
-const utils = require('./utils')
 
 const express = require('express')
 const app = express()
@@ -127,7 +126,7 @@ app.use('/api/users/:id', (req, res) => {
 app.use('/api/products/:id', (req, res) => {
     if (req.method === 'GET') {
         sql = 'SELECT * FROM products WHERE id=?'
-        db.all(sql, [req.params.category, req.params.id], (err, rows) => {
+        db.all(sql, [req.params.id], (err, rows) => {
             if (err) throw err
             res.send(JSON.stringify(rows))
         })
