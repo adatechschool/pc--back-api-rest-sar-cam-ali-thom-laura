@@ -3,7 +3,7 @@ info:
   title: AMPUNV API
   description: API description in Markdown.
   version: 1.0.0
-host: ampunv.fr
+host: localhost:3000
 basePath: /api
 schemes:
   - https
